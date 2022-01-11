@@ -1314,7 +1314,7 @@ bool policy_mgr_is_safe_channel(struct wlan_objmgr_psoc *psoc,
 
 	for (j = 0; j < pm_ctx->unsafe_channel_count; j++) {
 		if (ch_freq == pm_ctx->unsafe_channel_list[j]) {
-			is_safe = false;
+			//is_safe = false;
 			policy_mgr_warn("Freq %d is not safe", ch_freq);
 			break;
 		}
